@@ -1,5 +1,18 @@
-html {
-  font-size: 14px;
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    perspective: 100rem;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -14,5 +27,6 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    height:100vh;
+    margin-bottom: 60px;
 }

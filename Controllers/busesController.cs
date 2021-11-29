@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bus_REG_system.Data;
 using Bus_REG_system.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bus_REG_system.Controllers
 {
@@ -23,6 +24,16 @@ namespace Bus_REG_system.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.bus.ToListAsync());
+        }
+        //search
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+        //search
+        public async Task<IActionResult> ShowSearchResults(string SearchPhrase)
+        {
+            return View("Index", await _context.bus.Where(j=> j.RegNo.Contains(SearchPhrase)).ToListAsync());
         }
 
         // GET: buses/Details/5
@@ -42,8 +53,10 @@ namespace Bus_REG_system.Controllers
 
             return View(bus);
         }
-
         // GET: buses/Create
+        //request login
+        [Authorize]
+        
         public IActionResult Create()
         {
             return View();
@@ -52,8 +65,10 @@ namespace Bus_REG_system.Controllers
         // POST: buses/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
+                
         public async Task<IActionResult> Create([Bind("Id,RegNo,BusName,OwnersID,DriversID,SaccoId")] bus bus)
         {
             if (ModelState.IsValid)
@@ -64,7 +79,7 @@ namespace Bus_REG_system.Controllers
             }
             return View(bus);
         }
-
+        [Authorize]
         // GET: buses/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -84,6 +99,7 @@ namespace Bus_REG_system.Controllers
         // POST: buses/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,RegNo,BusName,OwnersID,DriversID,SaccoId")] bus bus)
@@ -117,6 +133,7 @@ namespace Bus_REG_system.Controllers
         }
 
         // GET: buses/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,6 +154,7 @@ namespace Bus_REG_system.Controllers
         // POST: buses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var bus = await _context.bus.FindAsync(id);
