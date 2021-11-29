@@ -1,0 +1,132 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Bus_REG_system
+build_property.RootNamespace = Bus_REG_system
+build_property.ProjectDir = C:\Users\Colli\Desktop\Bus REG system\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Colli\Desktop\Bus REG system
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/buses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYnVzZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/buses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYnVzZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/buses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYnVzZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/buses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYnVzZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/buses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYnVzZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Drivers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Drivers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Drivers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Drivers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Drivers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Routes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91dGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Routes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91dGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Routes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91dGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Routes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91dGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Routes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91dGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Saccoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjY29lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Saccoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjY29lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Saccoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjY29lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Saccoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjY29lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Saccoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjY29lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Colli/Desktop/Bus REG system/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bxvvlxy91u
