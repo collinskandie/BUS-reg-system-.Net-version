@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="BUS_REG_WEB_APP.Site1" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/stylemaster.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+   </head>
+<body>
+    <div class="header">
+        
+        <img src="img/icon.jfif" width="50" height="50"/>
+        <h1>Online Bus Registration System</h1> 
+        
+     </div>
+    <div class="nav">
+        <a href="index.aspx">Home</a>
+        <a href="#">Search</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="userlogin.aspx">Login</a>
+    </div>
+    <form id="form1" runat="server"> 
+   
+    <div class="section" >
+        <div>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                
+            </asp:ContentPlaceHolder>
+        </div>        
+      
+     </div>
+        <footer class="footer">
+            <div class="socia-media">
+                <a href="#"><i class="fab fa-facebook-f">Facebook</i></a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+            <div class="about">
+                <p>&copy All Rigths reserved. 2021</p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

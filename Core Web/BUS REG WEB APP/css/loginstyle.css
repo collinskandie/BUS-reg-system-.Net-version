@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: cover;
+    background-position: center;
+    font-family: sans-serif;
+    overflow: hidden;
+    color:#fff;
+}
+img {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0.8);
+   
+}
+
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding:70px 30px;
+}
+h2{
+    margin:0;
+    padding: 0 0 20px;
+    text-align:center;
+}
+.loginbox p{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"]{
+    border: none;
+    color: white;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height:40px; 
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
