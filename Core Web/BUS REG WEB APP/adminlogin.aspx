@@ -13,23 +13,21 @@
     <div class="loginbox">
         <img src="img/avatar.png" class="avatar">
         <h2>Admin Login Here</h2>
-        <form id="form1" runat="server">
+        <form id="adminlogin" runat="server">
         <p>Username</p>
         <asp:TextBox ID="Username" runat="server"  placeholder="Username"></asp:TextBox> 
             <br />
             <p>Password</p> 
         <asp:TextBox ID="Password" runat="server"  placeholder="Password"></asp:TextBox><br>
         <br>
-        <button>Login</button> <br>
+        <asp:Button ID="login" runat="server" Text="Login" /> <br>
             <br>
+            <a href="index.aspx"><<.back to home page</a> <br>
         <a href="userlogin.aspx">Regular user Login</a>
 
         </form>
 
-    </div>
-
-
-   
+    </div> 
 
 
 </body>
