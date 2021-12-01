@@ -15,22 +15,22 @@ namespace BUS_REG_WEB_APP
     {
 
         /// <summary>
-        /// form1 control.
+        /// userlogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm userlogin;
 
         /// <summary>
-        /// username control.
+        /// uemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox username;
+        protected global::System.Web.UI.WebControls.TextBox uemail;
 
         /// <summary>
         /// password control.
@@ -40,5 +40,23 @@ namespace BUS_REG_WEB_APP
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox password;
+
+        /// <summary>
+        /// login control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button login;
+
+        /// <summary>
+        /// forgotpass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton forgotpass;
     }
 }

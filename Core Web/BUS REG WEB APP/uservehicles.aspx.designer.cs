@@ -11,43 +11,34 @@ namespace BUS_REG_WEB_APP
 {
 
 
-    public partial class WebForm2
+    public partial class uservehicles
     {
 
         /// <summary>
-        /// adminlogin control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm adminlogin;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Username control.
+        /// myvehicles control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Username;
+        protected global::System.Web.UI.HtmlControls.HtmlForm myvehicles;
 
         /// <summary>
-        /// Password control.
+        /// carlist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
-
-        /// <summary>
-        /// login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login;
+        protected global::System.Web.UI.WebControls.GridView carlist;
     }
 }

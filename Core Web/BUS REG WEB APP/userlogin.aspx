@@ -14,16 +14,17 @@
     <div class="loginbox">
         <img src="img/avatar.png" class="avatar">
         <h2>User Login Here</h2>
-        <form id="form1" runat="server">
-        <p>Username</p> <br>
-        <asp:TextBox ID="username" runat="server" input="text" placeholder="Username"></asp:TextBox> <br>
-        <p>Password</p> <br>
+        <form id="userlogin" runat="server">
+        <p>Username or email address</p>
+        <asp:TextBox ID="uemail" runat="server" input="text" placeholder="Username or email"></asp:TextBox> <br>
+        <p>Password</p>
+           
         <asp:TextBox ID="password" runat="server" input="password" placeholder="Password"></asp:TextBox><br>
-        <br>
-        <button>Login</button> <br>
-          <a href="#">Forgot Password?</a><br>
-         <a href="*">New user</a><br>
-         <a href="adminlogin.aspx">Admin Login</a><br>
+        <asp:Button ID="login" runat="server" Text="Login" />
+        <a href="usersignup.aspx"><input id="SignUp" type="button" value="Sign up" /></a>
+           <asp:LinkButton ID="forgotpass" runat="server">Forgot Password?</asp:LinkButton><br>
+           <a href="index.aspx"><<.back to home page</a> <br>
+            <a href="adminlogin.aspx">Admin Login</a>
              </form>
 
     </div>

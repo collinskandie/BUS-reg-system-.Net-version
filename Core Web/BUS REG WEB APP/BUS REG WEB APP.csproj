@@ -67,12 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstraps\css\bootstrap.min.css" />
-    <Content Include="Bootstraps\js\bootstrap.bundle.min.js" />
     <Content Include="css\customstylesheet.css" />
     <Content Include="css\loginstyle.css" />
+    <Content Include="css\signupstyle.css" />
     <Content Include="css\style.css" />
     <Content Include="css\stylemaster.css" />
+    <Content Include="css\userprofilestyle.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
     <Content Include="fontawesome\attribution.js" />
@@ -1734,9 +1734,12 @@
     <Content Include="img\scania.jpg" />
     <Content Include="index.aspx" />
     <Content Include="js\script.js" />
+    <Content Include="uservehicles.aspx" />
     <Content Include="Web.config" />
     <Content Include="userlogin.aspx" />
     <Content Include="adminlogin.aspx" />
+    <Content Include="usersignup.aspx" />
+    <Content Include="userprofile.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="index.aspx.cs">
@@ -1767,6 +1770,27 @@
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usersignup.aspx.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usersignup.aspx.designer.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile.aspx.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile.aspx.designer.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uservehicles.aspx.cs">
+      <DependentUpon>uservehicles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uservehicles.aspx.designer.cs">
+      <DependentUpon>uservehicles.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
