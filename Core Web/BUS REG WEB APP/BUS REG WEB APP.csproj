@@ -67,14 +67,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminpanel.aspx" />
+    <Content Include="alldriversaspx.aspx" />
+    <Content Include="allroutes.aspx" />
+    <Content Include="allsaccos.aspx" />
+    <Content Include="allusers.aspx" />
     <Content Include="css\customstylesheet.css" />
+    <Content Include="css\dashstyle.css" />
     <Content Include="css\loginstyle.css" />
+    <Content Include="css\pagecss.css" />
     <Content Include="css\signupstyle.css" />
     <Content Include="css\style.css" />
     <Content Include="css\stylemaster.css" />
     <Content Include="css\userprofilestyle.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
+    <Content Include="udrivers.aspx" />
     <Content Include="fontawesome\attribution.js" />
     <Content Include="fontawesome\css\all.css" />
     <Content Include="fontawesome\css\all.min.css" />
@@ -1734,14 +1742,57 @@
     <Content Include="img\scania.jpg" />
     <Content Include="index.aspx" />
     <Content Include="js\script.js" />
+    <Content Include="userpanel.aspx" />
     <Content Include="uservehicles.aspx" />
+    <Content Include="vehiclesinventory.aspx" />
     <Content Include="Web.config" />
     <Content Include="userlogin.aspx" />
     <Content Include="adminlogin.aspx" />
     <Content Include="usersignup.aspx" />
-    <Content Include="userprofile.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminpanel.aspx.cs">
+      <DependentUpon>adminpanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpanel.aspx.designer.cs">
+      <DependentUpon>adminpanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alldriversaspx.aspx.cs">
+      <DependentUpon>alldriversaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alldriversaspx.aspx.designer.cs">
+      <DependentUpon>alldriversaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allroutes.aspx.cs">
+      <DependentUpon>allroutes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="allroutes.aspx.designer.cs">
+      <DependentUpon>allroutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allsaccos.aspx.cs">
+      <DependentUpon>allsaccos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="allsaccos.aspx.designer.cs">
+      <DependentUpon>allsaccos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allusers.aspx.cs">
+      <DependentUpon>allusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="allusers.aspx.designer.cs">
+      <DependentUpon>allusers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="udrivers.aspx.cs">
+      <DependentUpon>udrivers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="udrivers.aspx.designer.cs">
+      <DependentUpon>udrivers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1771,6 +1822,13 @@
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="userpanel.aspx.cs">
+      <DependentUpon>userpanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userpanel.aspx.designer.cs">
+      <DependentUpon>userpanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="usersignup.aspx.cs">
       <DependentUpon>usersignup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1778,19 +1836,19 @@
     <Compile Include="usersignup.aspx.designer.cs">
       <DependentUpon>usersignup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="userprofile.aspx.cs">
-      <DependentUpon>userprofile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="userprofile.aspx.designer.cs">
-      <DependentUpon>userprofile.aspx</DependentUpon>
-    </Compile>
     <Compile Include="uservehicles.aspx.cs">
       <DependentUpon>uservehicles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="uservehicles.aspx.designer.cs">
       <DependentUpon>uservehicles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vehiclesinventory.aspx.cs">
+      <DependentUpon>vehiclesinventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vehiclesinventory.aspx.designer.cs">
+      <DependentUpon>vehiclesinventory.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

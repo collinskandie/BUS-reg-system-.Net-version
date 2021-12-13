@@ -4,7 +4,7 @@
 <html>
 
 <head>
-    <title>Admin Login Page</title>
+    <title>User Login Page</title>
     <link href="css/loginstyle.css" rel="stylesheet" />
     
 </head>
@@ -17,10 +17,9 @@
         <form id="userlogin" runat="server">
         <p>Username or email address</p>
         <asp:TextBox ID="uemail" runat="server" input="text" placeholder="Username or email"></asp:TextBox> <br>
-        <p>Password</p>
-           
-        <asp:TextBox ID="password" runat="server" input="password" placeholder="Password"></asp:TextBox><br>
-        <asp:Button ID="login" runat="server" Text="Login" />
+        <p>Password</p>          
+        <asp:TextBox ID="password" runat="server" type="password" placeholder="Password"></asp:TextBox><br>
+        <asp:Button ID="login" runat="server" Text="Login" OnClick="login_Click" />
         <a href="usersignup.aspx"><input id="SignUp" type="button" value="Sign up" /></a>
            <asp:LinkButton ID="forgotpass" runat="server">Forgot Password?</asp:LinkButton><br>
            <a href="index.aspx"><<.back to home page</a> <br>
