@@ -11,7 +11,7 @@ namespace BUS_REG_WEB_APP
 {
 
 
-    public partial class WebForm3
+    public partial class Usersignup
     {
 
         /// <summary>

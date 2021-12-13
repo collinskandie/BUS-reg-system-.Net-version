@@ -11,16 +11,16 @@ namespace BUS_REG_WEB_APP
 {
 
 
-    public partial class uservehicles
+    public partial class allsaccos
     {
 
         /// <summary>
-        /// userbuses control.
+        /// all_saccos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView userbuses;
+        protected global::System.Web.UI.WebControls.GridView all_saccos;
     }
 }

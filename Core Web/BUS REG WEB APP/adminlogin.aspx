@@ -18,9 +18,9 @@
         <asp:TextBox ID="Username" runat="server"  placeholder="Username"></asp:TextBox> 
             <br />
             <p>Password</p> 
-        <asp:TextBox ID="Password" runat="server"  placeholder="Password"></asp:TextBox><br>
+        <asp:TextBox ID="Password" runat="server" type="password"  placeholder="Password"></asp:TextBox><br>
         <br>
-        <asp:Button ID="login" runat="server" Text="Login" /> <br>
+        <asp:Button ID="login" runat="server" Text="Login" OnClick="login_Click" /> <br>
             <br>
             <a href="index.aspx"><<.back to home page</a> <br>
         <a href="userlogin.aspx">Regular user Login</a>
