@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <form runat="server">
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
@@ -63,7 +64,9 @@
             </li>
         </ul>
         <div class="profile-content">
-           <span><i class="fas fa-sign-out-alt" id="log_out"></i>Log Out</span>
+           <span><i class="fas fa-sign-out-alt" id="log_out"></i>
+              <asp:LinkButton ID="LogOut" runat="server" OnClick="login_Click" >Log Out</asp:LinkButton></span>
+
         </div>
 
 
@@ -75,12 +78,27 @@
         </div>
         <hr>
         <div class="page_content">
-            <form runat="server">
-                  <asp:GridView ID="alldrivers" runat="server"></asp:GridView>
-            </form>
-           
+            <div>
+            <h3>Driver registration Form</h3>
+            <hr> 
+            Drivers ID <br />
+            <asp:TextBox ID="driversID" runat="server"></asp:TextBox><br />
+            Full Name<br />
+            <asp:TextBox ID="Fullname" runat="server"></asp:TextBox><br />
+            Drivers Email Address<br>
+            <asp:TextBox ID="email" runat="server"></asp:TextBox><br />
+            Phone<br>
+            <asp:TextBox ID="phone" runat="server"></asp:TextBox><br /> 
+              <asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+             </div>
+            <div class="gridview">
+                <h3>Drivers Available in the system</h3>
+                <asp:GridView ID="all divers" runat="server"> </asp:GridView>
+                
+            </div>
         </div>
     </div>
+   </form>
     <script src="js/first.js"></script>
 
 </body>
