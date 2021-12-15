@@ -1,0 +1,142 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #000;
+    padding: 6px 14px;
+}
+
+    .sidebar .logo_content .logo {
+        color: #fff;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+    }
+
+        .sidebar .logo_content .logo i {
+            font-size: 28px;
+            margin-right: 5px;
+        }
+
+.logo_content .logo .logo_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #fff;
+    left: 190px;
+    top: 6px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+    .sidebar ul li {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin: 0 5px;
+        list-style: none;
+        line-height: 50px;
+        border-radius: 12px;
+    top: 0px;
+    left: 0px;
+}
+
+        .sidebar ul li a {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.4s ease;
+        }
+
+            .sidebar ul li a:hover {
+                color: #000;
+                background: #fff;
+            }
+
+            .sidebar ul li a i {
+                height: 50px;
+                min-width: 50px;
+                border-radius: 12px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+li input #search {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #000;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+    li input #search.boc {
+        position: absolute;
+        z-index: 99;
+        color: #fff;
+        font-size: 22px;
+    }
+
+.sidebar .profile-content {
+    position: absolute;
+    color: #fff;
+    bottom: 10%;
+    left: 0%;
+}
+
+.profile-content #log_out {
+    position: absolute;
+    bottom: 5%;
+    transform: translateX(10%);
+    width: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.main_section {
+    position: fixed;
+    width: 90%;
+    left: 240px;
+    height: 100%;
+}
+
+    .main_section .page_header {
+        text-align: center;
+    }
