@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <form runat="server">
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
@@ -63,14 +64,52 @@
         </div>
         <hr>
         <div class="page_content">
-            <form runat="server">
-                  <asp:GridView ID="busdrivers" runat="server"></asp:GridView>
-            </form>
-           
-        </div>
-    </div>
-    <script src="js/first.js"></script>
-
-</body>
-
-</html>
+            <div>
+            <h3>Driver registration Form</h3>
+            <hr> 
+            Drivers ID <br />
+            <asp:TextBox ID="driversID" runat="server"></asp:TextBox><br />
+            Full Name<br />
+            <asp:TextBox ID="Fullname" runat="server"></asp:TextBox><br />
+            Drivers Email Address<br>
+            <asp:TextBox ID="email" runat="server"></asp:TextBox><br />
+            Phone<br>
+            <asp:TextBox ID="phone" runat="server"></asp:TextBox><br /> 
+              <asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+             </div>
+            <h3>Drivers Available in the system</h3>
+                <p>
+                    <asp:GridView ID="all_drivers" runat="server" AutoGenerateColumns="False" DataKeyNames="DriverID" OnRowEditing="all_drivers_RowEditing" OnRowUpdated="all_drivers_RowUpdated" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" >
+                        <AlternatingRowStyle BackColor="#CCCCCC" />
+                        <Columns>
+                            <asp:TemplateField HeaderText="Driver Id">
+                                <EditItemTemplate>
+                                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("DriverID") %>'></asp:TextBox>
+                                </EditItemTemplate>
+                                <ItemTemplate>
+                                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("DriverID") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:BoundField DataField="DriverFullName" HeaderText="Driver Name"></asp:BoundField>
+                            <asp:BoundField DataField="DriverEmail" HeaderText="Email"></asp:BoundField>
+                            <asp:BoundField DataField="DriverPhone" HeaderText="Phone Number"></asp:BoundField>
+                            <asp:CommandField ButtonType="Button" ShowEditButton="True"></asp:CommandField>
+                        </Columns>
+                            
+                        <FooterStyle BackColor="#CCCCCC" />
+                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="#808080" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#383838" />
+                            
+                    </asp:GridView>
+                </p>
+                
+            </div>
+        </div>       
+    
+        </form>
+    <script src="js/first.js">

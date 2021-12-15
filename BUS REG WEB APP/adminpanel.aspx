@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li>
-                <a href="allsaccos/aspx">
+                <a href="allsaccos.aspx">
                     <i class="fas fa-star"></i>
                     <span class="link_name">Registered Saccos</span>
                 </a>
@@ -64,7 +64,7 @@
         </ul>
         <div class="profile-content">
            <span><i class="fas fa-sign-out-alt" id="log_out">
-               <asp:LinkButton ID="LinkButton1" runat="server">Log Out</asp:LinkButton></i></span>
+               <asp:LinkButton ID="logout" runat="server" OnClick="Logout_Click">Log Out</asp:LinkButton></i></span>
         </div>
 
 

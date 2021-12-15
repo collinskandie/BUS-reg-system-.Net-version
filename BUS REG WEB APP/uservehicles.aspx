@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <form runat="server">
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
@@ -63,12 +64,50 @@
         </div>
         <hr>
         <div class="page_content">
-            <form runat="server">
-                  <asp:GridView ID="userbuses" runat="server"></asp:GridView>
-            </form>
+            <div>
+            <h3>Bus registration Form</h3>
+            <hr> 
+            Bus Reg Number ID <br />
+            <asp:TextBox ID="regNo" runat="server"></asp:TextBox><br />
+            Name<br />
+            <asp:TextBox ID="usName" runat="server"></asp:TextBox><br />
+            Owner ID<br>
+            <asp:TextBox ID="ownerid" runat="server"></asp:TextBox><br />
+            Driver ID<br>
+            <asp:TextBox ID="driverid" runat="server"></asp:TextBox><br />
+            Sacco ID<br>
+            <asp:TextBox ID="saccoID" runat="server"></asp:TextBox><br />
+              <asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click"  />
+             </div>
+            <div class="gridview">
+                <h3>Buses Available in the system</h3>
+                <p>
+                    <asp:GridView ID="all_vehicles" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataKeyNames="RegNo" ForeColor="Black" GridLines="Vertical" OnRowEditing="all_vehicles_RowEditing" OnRowUpdating="all_vehicles_RowUpdating" >
+                        <AlternatingRowStyle BackColor="#CCCCCC" />
+                        <Columns>
+                            <asp:BoundField DataField="RegNo" HeaderText="Reg Number" />
+                            <asp:BoundField DataField="BusName" HeaderText="Name" />
+                            <asp:BoundField DataField="OwnerID" HeaderText="Owner ID" />
+                            <asp:BoundField DataField="DriverID" HeaderText="Driver ID" />
+                            <asp:BoundField DataField="SaccoID" HeaderText="Sacco ID" />
+                        </Columns>
+                        <FooterStyle BackColor="#CCCCCC" />
+                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="#808080" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#383838" />
+                    </asp:GridView>                         
+                        
+                            
+                   
            
         </div>
+        </div>
     </div>
+          </form>
     <script src="js/first.js"></script>
 
 </body>

@@ -64,7 +64,7 @@
             </li>
         </ul>
         <div class="profile-content">
-           <span><i class="fas fa-sign-out-alt" id="log_out"></i>Log Out</span>
+           <span><i class="fas fa-sign-out-alt" id="log_out"></i><asp:LinkButton ID="LinkButton1" runat="server">Log Out</asp:LinkButton></i></span></span>
         </div>
 
 

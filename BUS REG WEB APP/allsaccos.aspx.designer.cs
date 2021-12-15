@@ -15,42 +15,6 @@ namespace BUS_REG_WEB_APP
     {
 
         /// <summary>
-        /// regNo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox regNo;
-
-        /// <summary>
-        /// usName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usName;
-
-        /// <summary>
-        /// ownerid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ownerid;
-
-        /// <summary>
-        /// driverid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox driverid;
-
-        /// <summary>
         /// saccoID control.
         /// </summary>
         /// <remarks>
@@ -58,6 +22,15 @@ namespace BUS_REG_WEB_APP
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox saccoID;
+
+        /// <summary>
+        /// sacconame control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox sacconame;
 
         /// <summary>
         /// Save control.

@@ -28,7 +28,7 @@ namespace BUS_REG_WEB_APP
             else
             {
                 NewUser();
-            }            
+            }
         }
         //check user method
         bool checkUser()
@@ -43,12 +43,12 @@ namespace BUS_REG_WEB_APP
 
                 }
                 //sql insert query
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE OwnerID = '"+IDnumber.Text.Trim()+"';", con);
-                SqlDataAdapter da= new SqlDataAdapter(cmd);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE OwnerID = '" + IDnumber.Text.Trim() + "';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                if(dt.Rows.Count>= 1)
+                if (dt.Rows.Count >= 1)
                 {
                     return true;
                 }
@@ -66,46 +66,27 @@ namespace BUS_REG_WEB_APP
                 return false;
 
             }
-            
+
         }
         //login method
         void NewUser()
         {
-            //after clicking the register button.
-            try
+            using (SqlConnection con = new SqlConnection(strcon))
             {
-                //check for open connections
-                SqlConnection con = new SqlConnection(strcon);
-                if (con.State == ConnectionState.Closed)
+                con.Open();
+                SqlCommand sqlInsert = new SqlCommand("INSERT INTO User VALUES('" + IDnumber.Text.Trim() + "','" + fullname.Text.Trim() + "','" + Email.Text.Trim() + "','" + phoneNumber.Text.Trim() + "') ", con);
+                int tcmd = sqlInsert.ExecuteNonQuery();
+                if (tcmd > 0)
                 {
-                    con.Open();
+                    Response.Write("<script> alert('User Saved successfully')</script>");
+                    Response.Redirect("userlogin.aspx");
 
                 }
-                string query = "INSERT INTO Users (OwnerID,Full_name,Email,Phone,Password) VALUES(@owner_id,@fullname,@email,@phone,@password)";
-                //sql insert query
-                SqlCommand cmd = new SqlCommand(query, con);
-                //declare values from form
-                cmd.Parameters.AddWithValue("@owner_id", IDnumber.Text.Trim());
-                cmd.Parameters.AddWithValue("@fullname", fullname.Text.Trim());
-                cmd.Parameters.AddWithValue("@email", Email.Text.Trim());
-                cmd.Parameters.AddWithValue("@phone", phoneNumber.Text.Trim());
-                cmd.Parameters.AddWithValue("@password", Password.Text.Trim());
-
-                //execute query
-                cmd.ExecuteNonQuery();
-                //close connection.
-                con.Close();
-                //successful signup message
-                Response.Write("<script> alert('Sign Up successful. Login');</script>");
-
+                else
+                {
+                    Response.Write("<script> alert('Try Again')</script>");
+                }
             }
-            catch (Exception ex)
-            {
-                //exception message
-                Response.Write("<script> alert('" + ex.Message + "');</script>");
-
-            }
-
         }
     }
 }

@@ -26,7 +26,7 @@ namespace BUS_REG_WEB_APP
             using (SqlConnection con = new SqlConnection(strcon))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM BUStbl", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Users", con);
                 SqlDataReader dataReader = cmd.ExecuteReader();
                 if (dataReader.HasRows == true)
                 {
@@ -42,7 +42,7 @@ namespace BUS_REG_WEB_APP
             using (SqlConnection con = new SqlConnection(strcon))
             {
                 con.Open();
-                SqlCommand sqlInsert = new SqlCommand("INSERT INTO BUStbl(RegNo,BusName,OwnerID,DriverID,SaccoID) VALUES('" + regNo.Text.Trim() + "','" + usName.Text.Trim() + "','" + ownerid.Text.Trim() + "','" + driverid.Text.Trim() + "','" + saccoID.Text.Trim() + "') ", con);
+                SqlCommand sqlInsert = new SqlCommand("INSERT INTO Users VALUES('" + regNo.Text.Trim() + "','" + usName.Text.Trim() + "','" + ownerid.Text.Trim() + "','" + driverid.Text.Trim() + "','" + saccoID.Text.Trim() + "') ", con);
                 int tcmd = sqlInsert.ExecuteNonQuery();
                 if (tcmd > 0)
                 {
@@ -91,7 +91,7 @@ namespace BUS_REG_WEB_APP
             using (SqlConnection con = new SqlConnection())
             {
                 con.Open();
-                SqlCommand editValue = new SqlCommand("UPDATE BUStbl set BusName='" + name + "',OwnerID= '" + ownerid + "',DriverID='" + driverid + "' WHERE RegNo='" + regno + "'");
+                SqlCommand editValue = new SqlCommand("UPDATE Users set BusName='" + name + "',OwnerID= '" + ownerid + "',DriverID='" + driverid + "' WHERE RegNo='" + regno + "'");
                 int exeQuery = editValue.ExecuteNonQuery();
                 if (exeQuery > 0)
                 {

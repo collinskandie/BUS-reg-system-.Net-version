@@ -48,8 +48,8 @@ namespace BUS_REG_WEB_APP
                 SqlDataReader dataReader = cmd.ExecuteReader();
                 if (dataReader.HasRows == true)
                 {
-                   allusers.DataSource = dataReader;
-                   allusers.DataBind(); //bind data to gridview.
+                    allusers.DataSource = dataReader;
+                    allusers.DataBind(); //bind data to gridview.
                 }
 
 
@@ -86,6 +86,11 @@ namespace BUS_REG_WEB_APP
 
 
             }
+        }
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Response.Redirect("adminlogin.aspx");
         }
 
     }
